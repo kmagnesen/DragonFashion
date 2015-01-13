@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
