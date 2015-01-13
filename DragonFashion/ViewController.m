@@ -22,9 +22,19 @@
     [super viewDidLoad];
 
     Dragon *smaug = [[Dragon alloc] init];
-    smaug.fullname = @"Smaug";
+    smaug.fullname = @"Smaug the Magnificent";
+    smaug.signatureClothingItem = @"One Ring";
+    Dragon *puff = [[Dragon alloc] init];
+    puff.fullname = @"Puff the Magic Dragon";
+    puff.signatureClothingItem = @"Bowtie";
+    Dragon *albi = [[Dragon alloc] init];
+    albi.fullname = @"Albi the Racist Dragon";
+    albi.signatureClothingItem = @"Top Hat";
+    Dragon *drogon = [[Dragon alloc] init];
+    drogon.fullname = @"Drogon the Destroyer";
+    drogon.signatureClothingItem = @"Two Chainz";
 
-    self.dragons = [NSArray arrayWithObjects:smaug, nil];
+    self.dragons = [NSArray arrayWithObjects:smaug, puff, albi, drogon, nil];
 }
 
 #pragma mark UITableViewDataSource
@@ -39,6 +49,7 @@
     Dragon *dragon = [self.dragons objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCellID" forIndexPath:indexPath];
     cell.textLabel.text = dragon.fullname;
+    cell.detailTextLabel.text = dragon.signatureClothingItem;
 
     return cell;
 }
