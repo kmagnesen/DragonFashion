@@ -14,6 +14,7 @@
 		F9C0351B1A657C7D0091FBD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C0351A1A657C7D0091FBD7 /* Images.xcassets */; };
 		F9C0351E1A657C7D0091FBD7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C0351C1A657C7D0091FBD7 /* LaunchScreen.xib */; };
 		F9C0352A1A657C7D0091FBD7 /* DragonFashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C035291A657C7D0091FBD7 /* DragonFashionTests.m */; };
+		F9C035351A65865D0091FBD7 /* Dragon.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C035341A65865D0091FBD7 /* Dragon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F9C035231A657C7D0091FBD7 /* DragonFashionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonFashionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C035281A657C7D0091FBD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9C035291A657C7D0091FBD7 /* DragonFashionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragonFashionTests.m; sourceTree = "<group>"; };
+		F9C035331A65865D0091FBD7 /* Dragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon.h; sourceTree = "<group>"; };
+		F9C035341A65865D0091FBD7 /* Dragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				F9C035121A657C7D0091FBD7 /* AppDelegate.m */,
 				F9C035141A657C7D0091FBD7 /* ViewController.h */,
 				F9C035151A657C7D0091FBD7 /* ViewController.m */,
+				F9C035331A65865D0091FBD7 /* Dragon.h */,
+				F9C035341A65865D0091FBD7 /* Dragon.m */,
 				F9C035171A657C7D0091FBD7 /* Main.storyboard */,
 				F9C0351A1A657C7D0091FBD7 /* Images.xcassets */,
 				F9C0351C1A657C7D0091FBD7 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				F9C035161A657C7D0091FBD7 /* ViewController.m in Sources */,
 				F9C035131A657C7D0091FBD7 /* AppDelegate.m in Sources */,
+				F9C035351A65865D0091FBD7 /* Dragon.m in Sources */,
 				F9C035101A657C7D0091FBD7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
