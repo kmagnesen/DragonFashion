@@ -21,20 +21,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    Dragon *smaug = [[Dragon alloc] init];
-    smaug.fullname = @"Smaug the Magnificent";
-    smaug.signatureClothingItem = @"One Ring";
-    Dragon *puff = [[Dragon alloc] init];
-    puff.fullname = @"Puff the Magic Dragon";
+    Dragon *smaug = [[Dragon alloc] initWithFullname:@"Smaug the Magnificent"];
+    smaug.signatureClothingItem = @"Gold Cloak";
+    Dragon *puff = [[Dragon alloc] initWithFullname:@"Puff the Magic Dragon"];
     puff.signatureClothingItem = @"Bowtie";
-    Dragon *albi = [[Dragon alloc] init];
-    albi.fullname = @"Albi the Racist Dragon";
+    Dragon *albi = [[Dragon alloc] initWithFullname:@"Albi the Racist Dragon"];
     albi.signatureClothingItem = @"Top Hat";
-    Dragon *drogon = [[Dragon alloc] init];
-    drogon.fullname = @"Drogon the Destroyer";
+    Dragon *drogon = [[Dragon alloc] initWithFullname:@"Drogon the Destroyer"];
     drogon.signatureClothingItem = @"Two Chainz";
 
     self.dragons = [NSArray arrayWithObjects:smaug, puff, albi, drogon, nil];
+
+    for (Dragon *dragon in self.dragons) {
+        NSLog(@"%@",dragon);
+    }
 }
 
 #pragma mark UITableViewDataSource
