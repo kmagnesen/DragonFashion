@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCellID" textLabel="3W4-YQ-miI" detailTextLabel="gGA-J0-lQ6" style="IBUITableViewCellStyleSubtitle" id="zS8-sb-YOf">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyCellID" textLabel="3W4-YQ-miI" detailTextLabel="gGA-J0-lQ6" style="IBUITableViewCellStyleSubtitle" id="zS8-sb-YOf">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zS8-sb-YOf" id="Z9R-af-qpC">
@@ -41,6 +41,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="aBF-qc-IKl" kind="push" id="yQI-3y-mez"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -64,7 +67,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="949"/>
+            <point key="canvasLocation" x="552" y="944"/>
+        </scene>
+        <!--Dragon View Controller-->
+        <scene sceneID="BBp-qz-uAb">
+            <objects>
+                <viewController id="aBF-qc-IKl" customClass="DragonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AlP-KG-BXu"/>
+                        <viewControllerLayoutGuide type="bottom" id="0dp-e0-mmi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2KR-Nh-sHy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gRJ-3c-lXA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEc-KF-gJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="944"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g4V-Rf-mcv">
